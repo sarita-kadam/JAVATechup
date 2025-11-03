@@ -16,7 +16,7 @@ public class Concatenation {
     String text = " This is pune";
     System.out.println(text.subSequence(3,9));
     System.out.println(text.substring(4));
-        System.out.println(text.substring(3,11));
+    System.out.println(text.substring(3,11));
 
 
 

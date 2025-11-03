@@ -6,12 +6,13 @@ public class ReverseString {
 
         String s = "sarita";
 
-        StringBuilder ss = new StringBuilder();
+        StringBuilder sb = new StringBuilder();
+
         for (int i = s.length()-1; i >= 0 ; i--) {
 
-            ss.append(s.charAt(i));
+            sb.append(s.charAt(i));
 
         }
-        System.out.println(ss);
+        System.out.println(sb);
     }
 }

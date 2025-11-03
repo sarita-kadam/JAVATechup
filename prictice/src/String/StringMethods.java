@@ -85,7 +85,7 @@ public class StringMethods {
         System.out.println(str2.substring(0,4));
         System.out.println(str2.substring(5));
 
-        //16.subSequence() also extracts a portion of a string but it returns a CharSequence, not a String.
+        //16.subSequence() also extracts a portion of a string, but it returns a CharSequence, not a String.
 
         String str = "javaprogram";
         System.out.println(str.subSequence(0,5));

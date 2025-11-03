@@ -20,5 +20,6 @@ public class InternMethod {
 
         //String s2 = "javaprogram";
        // System.out.println(s2.lastIndexOf(""));
+
     }
 }

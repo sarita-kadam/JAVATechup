@@ -15,12 +15,12 @@ public class Searching {
         //true → if the substring exists
         //false → if it does not exist
 
-        System.out.println(s.contains("gram"));
+        System.out.println(s.contains("java"));
 
         // startsWith() & endsWith()
 
         System.out.println(s.startsWith("pro"));
-        System.out.println(s.endsWith("ing"));
+        System.out.println(s.endsWith("gram"));
     }
 }
 
