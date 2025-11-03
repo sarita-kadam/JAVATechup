@@ -1,0 +1,250 @@
+
+* Basic java
+* String
+* Exception Handling
+* Threading
+* Collection
+* Java 8
+
+* Hibernate
+* Spring
+* Spring Boot
+* Junit/ Mockito
+
+* Jenkins
+* Maven
+* Git
+
+* Microservices
+* Kafka
+
+
+* SOLID
+* Design Patterns
+
+* AWS
+
+* 40 mini project => 1 real time project => resume
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+ * Public static void main (String [] args)
+
+•	public:                 Accessible from anywhere
+•	static:                 No object needed to call this method
+•	void:                   Doesn’t return anything
+•	main:                   Name of the method
+•	String [] args:         Command-line arguments
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+* Access Modifer
+
+1] private   = withine only same class(can not override sub class)
+2] Default   = access only same package(can override public / protected  )
+3] Protected = Also accessible in subclasses outside the package (but class can inherit(extend).can override public access modifer
+4] Public    = everywhere (only override public access modifer)
+
+------------------------------------------------------------------------------------------------------------------------------------------
+Method vs Block
+
+
+* JVM Arguments
+
+ 1]	Memory Allocation
+
+1.	Heap => object will always get stored in head memory.
+-	Young Generation: For short-lived objects.
+-	Old Generation: For long-lived objects.
+-	Permanent Generation (Meta space): Stores metadata about classes (replaced by Meta space in Java 8+).
+
+2.	Stack => Method calling, variables primitive
+
+-	Stores method-specific values like local variables and function calls.
+-	Follows the Last In, First Out (LIFO) principle.
+-	Automatically deallocated when the method ends.
+
+ 2] Garbage Collection
+
+- Garbage collection is an automatic process that removes unused objects from heap.
+- Objects are created on the heap area.
+- After multiple rounds of collection, object that continue to survive are moved to the old generation.
+
+  •	The cleanup Process
+  •	Compacting (separation of used and unused memory)
+
+  1.	Young Generation => for short-lived object (Major GC)
+
+  2.	Old Generation => for long-lived objects (Miner GC)
+
+  3.	Permanent Generation (Meta space in never versions) => stored about classes (Replace meta space in java 8+)
+
+---------------------------------------------------------------------------------------------------------------------------------
+ * What is Compiler & Interpreter
+
+   Compiler
+
+   -	Compiler convert our source code in to bytecode.
+
+   -	 .java (source code file) ------------- .class file (byte code file)
+
+   Interpreter
+
+   -	Interpreter convert byte code in to Machine code.
+
+   -	.class file (byte code file) --------------- machine code
+
+----------------------------------------------------------------------------------------------------------------------------------
+* Inheritance *
+
+-	It is process of one class (child class) can get prperties & behaviour of another class(parent class).
+
+-	Inheritance use in java for avoid code duplication or code reusability.
+
+-	We can archive inheritance using "extends" keyword
+
+	*  Child class   ---   extends   ---    parent class
+
+1] Single Inheritance
+
+-	1 parent class = 1 child class.
+
+2] Multiple Inheritance
+
+   -	Java does not support multiple inheritance because ambiguity (“”) issues.
+   -	Diamond problem (“”) ( Diamond problem is a when class inherit from two class that both inheritance from common superclass)
+
+
+3] Multilevel Inheritance
+
+ -  Great Grand Parents = Grand Parents = Parent = Child = Grand child
+
+4] Hierarchical Inheritance
+
+  - more than one subclass is inherited from a single base class
+  - one parent have one or more child
+
+5] Hybrid Inheritance
+
+   •	Hybrid inheritance is a combination of two or more types of inheritance
+        (e.g., single, multilevel, hierarchical, or multiple inheritance).
+
+   •	Java does not support hybrid inheritance directly with classes due to the diamond problem.
+        (Java does not support the multiple inheritance because of the diamond problem.)
+
+   •	Java uses interfaces to implement hybrid inheritance since interfaces allow multiple inheritance without ambiguity.
+        (The ambiguities are those issues that are not defined clearly in the Java language specification.)
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+* Polymorphism *
+
+-  is the ability of an object to respond to the same method call in different ways depending on its actual type.
+
+Overloading → Static (Compile-time) Polymorphism
+
+Overriding → Dynamic (Runtime) Polymorphism
+
+**  Overloading  **
+
+
+   -It is process in which me create method in same class with same name
+    but different argument list or different argument list or different method signature.
+
+
+What is method signature ?
+-	Method Name + Parameter List
+
+Void name (String name)
+{
+ }
+
+Rules:
+
+1.	Method Signature must be different or method name must be same but parameter list also be different.
+
+-   Different number of parameter
+- 	Order of Parameter must be different
+-	Type of parameter must be different
+
+2.	Within same class
+
+3.	Return type can be diffrent
+
+
+     1.	Same Method Name: Method Must have the same name.
+     2.	Different Parameter Lists: Method Must have different parameter lists, differing in:
+
+      -	Number of parameters Different quantities of parameters.
+      - Types of parameters parameter of varying data types.
+      - Order of parameters Sequence of data types of parameters differing.
+
+3.	Occurs within the same class: Method Overloading must be occurs within the same class
+
+4.	Return Type: the return type can be the same or different changing only the return type is not same
+
+5.	Access Modifiers: method can have different access modifier (Ex. Public private protected)
+
+
+
+** Method Hiding **
+
+   - Hiding → Static methods → compile-time (reference type decides).
+
+Why should we use method Overloading?
+
+-	Method overloading in Java allows multiple methods to have the same name but different parameters.
+
+
+** Overriding **
+
+   -	Redefining method present in parent class into subclass
+   -	Subclass specific implementation
+
+        1] Method name → must be the same.
+
+        2] Argument list (method signature) → must be exactly the same.
+
+        3] Return type → must be the same (or a covariant type (child or subclass).
+            (We can pass child class object wheneever we need parent class object)
+
+        4] The method in the parent must not be private, static, or final (because those cannot be overridden).
+
+           -  A method declared "final" can not be overridden
+           -  A method declared "static" can not be overridden but can be re-declared.
+              ( method declared static cannot be override but can be re-declared.) it's called "Method Hidding"
+           -  A "Constructers" can not be overridden.
+           -  If the argument list is different, then it becomes overloading, not overriding.
+
+Why should we use method Overriding?
+   -	when we want to change time method implementation in a specific child class we override that method.
+
+
+* Casting
+
+- one datatype convert in to onther datatype
+
+className refrence = new classname();
+     refrence type = object type
+
+1] Upcasting
+
+Parent refrence = new child(); // upcasting it's natural / implicit casting (automating convertion)
+
+2] Downcasting
+
+Child refrence = new parent(); // Down casting / explicit casting
+(Down casting will work at compile time,but will failt at runtime )
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+* Encapsulation
+
+- variables & methods together in single unit.
+
+Data = variables
+Code = methods
+Together inside a class = Encapsulation
