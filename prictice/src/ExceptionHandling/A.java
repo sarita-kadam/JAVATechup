@@ -15,6 +15,9 @@ public class A {
                 System.out.println("inner finally block");
             }
         }
+        catch (ArithmeticException e){
+            System.out.println(e);
+        }
         finally {
 
             System.out.println("outer finally block");

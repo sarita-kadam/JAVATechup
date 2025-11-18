@@ -11,7 +11,6 @@ public class SumofArray {
 
             a = a + Array[i];
 
-
         }
 
         System.out.println("Result is " +a);

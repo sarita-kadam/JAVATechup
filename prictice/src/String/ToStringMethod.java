@@ -49,3 +49,4 @@ public class ToStringMethod {
         System.out.println(obj); //automatically calls toString()
     }
 }
+

@@ -14,7 +14,9 @@ public class CustomCloseableClass implements AutoCloseable {
         }
     }
 
-void test(){
+void test()
+
+{
     System.out.println("test method ");
 }
 
@@ -23,6 +25,8 @@ void test(){
         System.out.println("When this method will get called ?");
     }
 }
+
+
 
 //try{
 //     CustomCloseableClass obj = new  CustomCloseableClass();
@@ -37,3 +41,4 @@ void test(){
 //        {
 //            //close the resource
 //        }
+

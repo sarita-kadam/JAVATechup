@@ -7,18 +7,18 @@ public class WhatIsExceptionHandling {
 //        int a = 100/0;
 //        System.out.println("text massage ");
 
-try
-{
-    String name = null;
-    System.out.println(name.length());
+        try {
+            String name = null;
+            System.out.println(name.length());
 
-} catch (Exception e)
-{
+            int a = 100 / 0;
+            System.out.println("text massage ");
 
-    System.out.println(e);
-}
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+
     }
-
 }
 
 

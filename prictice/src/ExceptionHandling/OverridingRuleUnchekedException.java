@@ -1,11 +1,6 @@
 package ExceptionHandling;
 
-// Unchecked exceptions (i.e. subclasses of RuntimeException)
-// The overriding method can throw any unchecked exception,
-// Regardless of what the overridden method declares (or doesn’t declare).No restriction for unchecked exceptions.
-
-// Even though Parent.show() didn’t declare any exception,
-// Child.show() can still throw an unchecked (RuntimeException) without compiler error.
+//Unchecked exceptions can be thrown anytime.
 
 class Parent {
     void show(){
@@ -30,6 +25,5 @@ public class OverridingRuleUnchekedException {
         obj.show();
 
     }
-
 
 }

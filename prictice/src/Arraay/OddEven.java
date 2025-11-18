@@ -4,17 +4,17 @@ public class OddEven {
 
     public static void main(String[] args) {
 
-//        int[] arr = {12,4,32,69,32,33,77};
-//
-//        for (int i = 0; i < arr.length; i++)
-//        {
-//            if (arr[i] % 2 == 0 ){
-//                System.out.println(+arr[i]+" = number is Even");
-//            }
-//            else {
-//                System.out.println(+arr[i]+" = number is Odd");
-//            }
-//        }
+        int[] arr = {12,4,32,69,32,33,77};
+
+        for (int i = 0; i < arr.length; i++)
+        {
+            if (arr[i] % 2 == 0 ){
+                System.out.println(+arr[i]+" = number is Even");
+            }
+            else {
+                System.out.println(+arr[i]+" = number is Odd");
+            }
+        }
 
 //        OddEven scanner = new OddEven (System.in);
 //

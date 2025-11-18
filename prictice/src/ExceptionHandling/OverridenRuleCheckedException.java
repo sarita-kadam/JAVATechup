@@ -1,7 +1,6 @@
 package ExceptionHandling;
 
-//IOException is the parent of FileNotFoundException.So Child throws a narrower checked exception
-//readFile() in Child cannot override readFile() in Parent; overridden method does not throw Exception
+//Checked exceptions:Must be same or subclass of parent’s exception You cannot throw new or broader checked exceptions
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -20,6 +19,7 @@ class Chil1 extends Parent1 {
         System.out.println("child reading file ");
     }
 }
+
 public class OverridenRuleCheckedException {
 
     public static void main(String[] args) throws IOException, SQLException {
@@ -28,3 +28,4 @@ public class OverridenRuleCheckedException {
         obj.readfile();
     }
 }
+

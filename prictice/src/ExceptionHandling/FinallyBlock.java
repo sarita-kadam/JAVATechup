@@ -14,7 +14,7 @@ public class FinallyBlock {
 
             System.out.println("what will happen to this line ?");
 
-            obj.dummy(); // NEP
+            obj.dummy(); // NPE
 
         } catch (ArithmeticException e) {
             System.out.println(e);

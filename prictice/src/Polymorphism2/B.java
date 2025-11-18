@@ -8,6 +8,7 @@ public class B extends Rule9 {
 
     @Override
     protected void add() {
+
         System.out.println("proteced can access same package / diffrent package in subclass(child class)");
     }
 

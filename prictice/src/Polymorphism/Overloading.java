@@ -12,7 +12,7 @@ class A{
         return a + b;
     }
 
-    int add(int aa,int bb,int cc){
+    double add(int aa,int bb,int cc){
         System.out.println();
         return aa + bb + cc;
 

@@ -10,10 +10,12 @@ package Abstraction;
 
 
 interface AAA{
+    int a = 10;
     void test();
 }
 
 interface BBB extends AAA {
+
     int add(int a,int b);
 }
 
@@ -31,14 +33,13 @@ abstract class InterfaceRule implements BBB {
     }
 }
 
- //Rule 2.	If concreate / Non – Abstract class implement one or more interfaces,
+ //Rule 2. If concreate / Non – Abstract class implement one or more interfaces,
 // than its mandatory for that child class to provide method implementation of abstract method of interface.
 
 public class Interface implements AAA,BBB {
 
     @Override
     public void test() {
-
 
     }
 

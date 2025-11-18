@@ -7,7 +7,7 @@ public class FlowOfTryCatch {
 
         try{
             System.out.println("2");
-            int a =100,b = 2,c; // value is 0 than excecute catch block otherwise not
+            int a =100,b = 2,c;           // value is 0 than excecute catch block otherwise not
             System.out.println("3");
             c = a/b;
             System.out.println("4");
@@ -23,3 +23,5 @@ public class FlowOfTryCatch {
         System.out.println("java");
     }
 }
+
+

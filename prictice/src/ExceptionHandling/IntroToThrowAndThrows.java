@@ -14,7 +14,7 @@ public class IntroToThrowAndThrows {
         {
             throw new ClassNotFoundException(" value of variable b is 0 and that's what causing this issue");
 
-            /*throw new NullPointerException("value of variable b is 0 and thas's what causing this issue ");*/
+            /*throw new NullPointerException(" value of variable b is 0 and that's what causing this issue ");*/
         }
 
         if (a == b)
@@ -27,6 +27,7 @@ public class IntroToThrowAndThrows {
         System.out.println("Div is " + c);
 
         Class obj = Class.forName("ExceptionHandling.IntroToThrowAndThrows");
+
         IntroToThrowAndThrows obj1 = (IntroToThrowAndThrows) obj.newInstance();
 
         /*try{

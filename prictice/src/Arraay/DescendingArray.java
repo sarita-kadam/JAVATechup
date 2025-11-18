@@ -7,13 +7,17 @@ public class DescendingArray {
 
 
         for (int i = 0; i < array.length; i++) {
+
             for (int j = 0; j < array.length; j++) {
 
                 if (array[i] > array[j]){   // use logic < / >
 
                     int temp = array[0];
+
                      temp = array[i];
+
                      array[i] = array[j];
+
                      array[j] = temp;
 
                 }

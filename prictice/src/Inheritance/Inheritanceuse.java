@@ -43,4 +43,4 @@ public class Inheritanceuse extends Parent3{
 
     }
 
-    }
+}

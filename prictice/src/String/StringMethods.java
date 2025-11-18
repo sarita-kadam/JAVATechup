@@ -59,11 +59,13 @@ public class StringMethods {
         System.out.println(s14.replaceAll("java","HTML"));
 
         // 12.split(String regex): Splits the string into an array based on a regex.
-        String s15 = "java is very easy";
-        String[] result = s15.split("");
-        System.out.println("result = ");
-        for (String str : result){
-            System.out.println(str + " ");
+        String s15 = "apple,banana,grapes,mango";
+
+        String[] fruits = s15.split(",");
+
+        for (int i = 0; i < fruits.length; i++) {
+            System.out.println(fruits[i]);
+
         }
 
         // 13. valueOf(Object obj): Converts an object to a string
@@ -89,6 +91,14 @@ public class StringMethods {
 
         String str = "javaprogram";
         System.out.println(str.subSequence(0,5));
+
+        //17. String.format() string value that replace placeholder
+
+        String name1 = "sarita";
+        int age = 23;
+
+        String result = String.format("my name is %s and i am %d years old. ",name1,age);
+        System.out.println(result);
 
 
     }

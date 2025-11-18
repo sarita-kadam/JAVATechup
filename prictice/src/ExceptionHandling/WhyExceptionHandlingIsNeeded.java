@@ -9,6 +9,7 @@ public class WhyExceptionHandlingIsNeeded {
 
         WhyExceptionHandlingIsNeeded obj = new WhyExceptionHandlingIsNeeded();
         obj = null;
+
         //obj.dummy(); // NPE
 
         try
@@ -26,11 +27,12 @@ public class WhyExceptionHandlingIsNeeded {
         {
           int a = 100 / 0;
         }
-        catch (Exception ee)
+        catch (Exception e)
         {
             System.out.println("we got an another exception.");
         }
     }
+
     void dummy()
     {
         System.out.println("dummy method of class WhyExceptionHandlingIsNeeded ");
