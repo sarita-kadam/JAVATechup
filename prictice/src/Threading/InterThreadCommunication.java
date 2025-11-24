@@ -1,6 +1,6 @@
 package Threading;
 
-// Object Class Method : wait(),notify(),notify().
+// Object Class Method : wait(),notify(),notify(). used only with synchronized block
 
 
 class TotalEarning extends Thread {
@@ -12,9 +12,11 @@ class TotalEarning extends Thread {
     {
 
         synchronized (this){
+
          for (int i = 1; i <= 10; i++) {
 
              total = total + 100;
+
            //  System.out.println(total);
 
          }
@@ -42,15 +44,11 @@ public class InterThreadCommunication {
         TotalEarning t = new TotalEarning();
         t.start();
 
-
      //   System.out.println("Total Earning: " + t.total + "rs");
-
 
         synchronized (t){
             t.wait(1000);
-
             System.out.println("Total Earning: " + t.total + "rs");
-
         }
     }
 }

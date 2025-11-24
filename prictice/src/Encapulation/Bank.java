@@ -25,7 +25,6 @@ public class Bank {
 
         Account a = new Account();
         a.setBalance(12000.0);
-
         System.out.println("Balance " + a.getBalance());
 
     }

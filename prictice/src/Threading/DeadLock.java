@@ -23,10 +23,10 @@ public class DeadLock {
             public void run() // thread T1 locking the R1 resource
             {
                 synchronized (R1) {
-                    System.out.println("Thread T1 Locked -> Resource R1");
+                    System.out.println(R1);
                     // thread T1 locking the R2 resource
                     synchronized (R2) {
-                        System.out.println("Thread T1 Locked -> Resource R2 ");
+                        System.out.println(R2);
                     }  //Released resource R2
                 }
             }//Released resource R1
@@ -36,13 +36,13 @@ public class DeadLock {
         Thread T2 = new Thread(){
 
             @Override
-            public void start() {
-                synchronized (R1){
-                    System.out.println("Thread T2 Locked -> Resource R2");
-                }
+            public void run() {
+                synchronized (R1) {
+                    System.out.println(R1);
 
-                synchronized (R2){
-                    System.out.println("Thread T2 locked -> Resource R1");
+                    synchronized (R2) {
+                        System.out.println(R2);
+                    }
                 }
             }
         };

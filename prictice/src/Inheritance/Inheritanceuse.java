@@ -5,6 +5,7 @@ package Inheritance;
 class Parent{
 
     int age = 10;
+
     void test()
     {
         System.out.println("test");
@@ -12,7 +13,9 @@ class Parent{
 }
 
 class Parent2{
+
     int b = 20;
+
     void show()
     {
         System.out.println("show");
@@ -20,7 +23,9 @@ class Parent2{
 }
 
 class Parent3{
+
     int c = 100;
+
     void method(){
 
         System.out.println(c);
@@ -36,7 +41,7 @@ public class Inheritanceuse extends Parent3{
 
         Inheritanceuse obj2 = new Inheritanceuse();
 
-        System.out.println(+obj2.c);
+        System.out.println(obj2.c);
 
 
 

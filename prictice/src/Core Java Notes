@@ -9,7 +9,7 @@
 * Hibernate
 * Spring
 * Spring Boot
-* Junit/ Mockito
+* Junit/ Mockito(testing unit)
 
 * Jenkins
 * Maven
@@ -26,7 +26,12 @@
 
 * 40 mini project => 1 real time project => resume
 
-
+#Testing:-
+* Selinum
+* cucumber
+* j-meter
+* J-Unit
+* Mockito
 
 --------------------------------------------------------------------------------------------------------------------------------------------------
 

@@ -1,5 +1,11 @@
 package JavaBasic;
 
+//there is no reference variable temporary object there is no reference so that why after used jvm push her GC
+// Syntax: new ClassName().MethodName();
+// use: when we use object only one time
+//int n = new Scanner(System.in).nextInt();
+
+
 public class AnonymousClass {
 
     int a;
@@ -24,8 +30,8 @@ public class AnonymousClass {
 
     public static void main(String[] args) {
 
-        new AnonymousClass(100,10);
+        new AnonymousClass(25,25).multiply(10,20);
 
-        new AnonymousClass(20,20);
+        new AnonymousClass(20,20).multiply(30,30);
     }
 }

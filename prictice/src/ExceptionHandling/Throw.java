@@ -4,8 +4,7 @@ import java.util.Scanner;
 
 class youngerException extends RuntimeException
 {
-    youngerException (String msg)
-    {
+    youngerException (String msg) {
         super(msg);
     }
 
@@ -19,6 +18,7 @@ class Voting
         System.out.println("Enter the age : ");
 
         int age = sc.nextInt();
+
         try {
             if (age < 18) {
 

@@ -9,7 +9,7 @@ class  Medical extends Thread{
 
             System.out.println("Medical start...");
 
-            Thread.sleep(1000);
+            Thread.sleep(5000);
 
             System.out.println("Medical Completed");
 

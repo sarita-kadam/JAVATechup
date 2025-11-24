@@ -1,7 +1,6 @@
 package Inheritance;
 
-//   2] Multilevel Inheritance
-//    -  Great Grand Parents = Grand Parents = Parent = Child = Grand child
+//   2.  Multilevel Inheritance : Great Grand Parents = Grand Parents = Parent = Child = Grand child
 
 
 class GreatGrandParents{

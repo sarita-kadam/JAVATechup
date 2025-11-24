@@ -23,8 +23,8 @@ public class IntruducationToEncapsulation {
         Encapsulation obj = new Encapsulation();
         obj.setATMpin(100);
 
-        int atm = obj.getATMpin();
-        System.out.println("Atm pin is " + atm);
+       // int atm = obj.getATMpin();
+        System.out.println("Atm pin is " + obj.getATMpin());
 
     }
 }

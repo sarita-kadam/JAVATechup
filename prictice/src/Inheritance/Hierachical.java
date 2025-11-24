@@ -11,7 +11,6 @@ class parent1{
     void show(){
         System.out.println("aa");
     }
-
 }
 
 class child1 extends parent1 {

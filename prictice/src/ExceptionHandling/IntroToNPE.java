@@ -17,6 +17,7 @@ public class IntroToNPE {
     void show(){
         System.out.println("show method ");
         IntroToNPE obj1 = new IntroToNPE();
+
         IntroToNPE npe = null;
         test(npe);
     }
