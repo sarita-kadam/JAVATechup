@@ -30,7 +30,8 @@ class Voting
             {
                 System.out.println("you can vote successfully");
             }
-        } catch (Exception e) {
+        }
+        catch (Exception e) {
             e.printStackTrace();
         }
         System.out.println("hello");

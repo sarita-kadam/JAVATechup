@@ -11,7 +11,6 @@ public class VariableNarrowingwidening {
         System.out.println(a);
         System.out.println(myDouble);
 
-
 //    widening in java process of covert smaller datatype in larger data type
 
         byte bb = 100;

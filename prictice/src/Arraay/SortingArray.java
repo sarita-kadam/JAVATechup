@@ -3,34 +3,42 @@ package Arraay;
 import java.util.Arrays;
 
 public class SortingArray {
+
     public static void main(String[] args) {
 
+        int[] arr = {44,22,77,11,99};
 
-        // o/p = is a ascending array
+        int temp;
 
-        int [] a = {3,6,1,7};
+        for (int i = 0; i < arr.length; i++){
 
-        for (int i = 0; i < a.length; i++) {
+          //  int flag = 0;
 
-            for (int j = 0; j < a.length; j++) {
+            for (int j = 0; j < arr.length-1-i; j++){
 
-                if (a[i] > a[j]){
+                if(arr[j] > arr[j +1]){
 
-                    int temp = a[i];
-                    a[i] = a[j];
-                    a[j] = temp;
+                    temp = arr[j];
+
+                    arr[j] = arr[j+1];
+
+                    arr[j+1] = temp;
+
+                   // flag = 1;
+
                 }
-
             }
+           // if (flag == 0){
+           //     break;
+           // }
+        }
+
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println(arr[i]);
 
         }
-            for(int i =0; i<a.length;i++)
-            {
-            System.out.println(a[i] +" " );
-            }
+
     }
-
-
 }
 
 // * Sorting Array

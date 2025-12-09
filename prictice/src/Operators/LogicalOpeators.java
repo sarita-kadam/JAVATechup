@@ -7,14 +7,14 @@ public class LogicalOpeators {
         int b = 20;
         int c = 30;
 
-        boolean logicalAnd = a < b && b < c ;      // < less than
-        System.out.println("check logical And = "+logicalAnd);  // return true when both condition are true
+        boolean aa = a < b && b < c ;      // < less than
+        System.out.println("check logical And = " + aa);  // return true when both condition are true
 
-        boolean logicalOR = a > b || b > c ;
+        boolean logicalOR = a > b || b < c ;
         System.out.println("check logical OR = " +logicalOR);  //return true when at leat 1 conditon is true
 
         boolean logicalNOT =  ! ((a > b) || (b > c)) ;
-        System.out.println(" check logical NOT = " +logicalNOT); // return true when condition is false
+        System.out.println("check logical NOT = " +logicalNOT); // return true when condition is false
 
     }
 

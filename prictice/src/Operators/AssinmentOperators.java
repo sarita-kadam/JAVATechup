@@ -9,7 +9,7 @@ public class AssinmentOperators {
         System.out.println(a -= 2);  //6
         System.out.println(a *= 3);  //18
         System.out.println(a /= 4);  //4
-        System.out.println(a %= 5);  //0
+        System.out.println(a %= 5);  //4
         System.out.println(a <<= 2); //
     }
 }

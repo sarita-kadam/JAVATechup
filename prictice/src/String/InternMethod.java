@@ -14,6 +14,7 @@ public class InternMethod {
         System.out.println(s1 == s2);      // false → different memory
         System.out.println(s1.equals(s2)); //true → same content
         System.out.println(s3 == s2);      //true → both in string pool
+        System.out.println(s1.equals(s3));
 
     }
 }

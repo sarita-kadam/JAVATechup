@@ -23,5 +23,4 @@ public class Rule9 {
             System.out.println("protected method");
         }
 
-
 }

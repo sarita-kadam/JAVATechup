@@ -30,7 +30,8 @@ public class SerializationAndDeserialization {
 
         System.out.println("Object Deserialized Successfully!");
         System.out.println(student);
-    } catch (IOException e) {
+    }
+        catch (IOException e) {
             e.printStackTrace();
         }
     }

@@ -6,9 +6,10 @@ public class DigitalClock extends Thread{
     public void run() {
         try{
 
-            for (int sec = 1; sec <= 10; sec++){
+            for (int i = 1; i <= 10; i ++){
 
-                System.out.println("Time : " + sec + " seconds");
+                System.out.println("Time : " + i + " seconds");
+
                 Thread.sleep(1000);
             }
             }

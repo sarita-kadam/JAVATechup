@@ -3,6 +3,7 @@ package Arraay;
 public class SumofArray {
 
     public static void main(String[] args) {
+
         int[] Array = {2,1,6,8,6};
 
         int a = 0;

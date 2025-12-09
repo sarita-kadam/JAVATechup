@@ -59,3 +59,6 @@ public class IntroToToTryWithReasource {
         }
     }
 }
+
+// scanner implement closable interface
+// closable implement Autocloseable interface

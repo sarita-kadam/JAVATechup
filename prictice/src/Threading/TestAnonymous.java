@@ -1,5 +1,7 @@
 package Threading;
 
+//Anonymous Classes : When we need a class only ONE time ,To make code shorter and cleaner
+
 interface AA{
     void test();
 

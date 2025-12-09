@@ -10,18 +10,13 @@ public class RelationalOprators {
         boolean checkequality = (a == b);                      //  false
         System.out.println("checkequality = " +checkequality);
 
-
         boolean checkeNotquality = (a != b);                     // true
         System.out.println("checkeNotquality = " +checkeNotquality);
 
-
         boolean CheckLessThan = (a > b);                           // false
-        System.out.println("CheckLessThan = " +CheckLessThan);
-
+        System.out.println("CheckLessThan = " + CheckLessThan);
 
     }
-
-
 }
 //-	Relational Operators are used to check for relations like equality, greater than, and less than.
-//-	They return Boolean results after the comparison
+//-	They return Boolean results after the comparison.

@@ -13,8 +13,8 @@ public class Example {
 
         int index = 0;
 
-
         for (int i = 0; i < arr1.length; i++)
+
         {
             boolean element = false;
 
