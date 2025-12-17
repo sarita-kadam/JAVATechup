@@ -3,6 +3,7 @@ package Static;
 public class StaticWorking {
 
     static int staticvar = 100;
+
     int instancevr = 300;
 
     public static void main(String[] args) {

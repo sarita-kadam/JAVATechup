@@ -17,7 +17,7 @@ public class B extends Rule9 {
         B obj = new B();
         obj.test();
         obj.add();
-       // obj.dummy();  private method can not access other package
+       //obj.dummy();  private method can not access other package
         // obj.show();  default can not access other package
        // obj.add();    protected can not access other pakage
     }

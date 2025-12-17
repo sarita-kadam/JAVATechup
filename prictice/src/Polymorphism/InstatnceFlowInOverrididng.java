@@ -3,7 +3,7 @@ package Polymorphism;
 class Demo2 {
 
     void show(){
-        System.out.println("instatnce method in parent class");
+        System.out.println("instance method in parent class");
     }
 }
 

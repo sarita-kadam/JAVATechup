@@ -7,8 +7,8 @@ import java.io.FileOutputStream;
 
 class ReadAndWrite
 {
-   void readfile() throws FileNotFoundException
-   {
+   void readfile() throws FileNotFoundException {
+
        FileInputStream obj = new FileInputStream("d:/abc.txt");
 
    }
@@ -21,9 +21,11 @@ class ReadAndWrite
 
 
 public class Throws {
+
     public static void main(String[] args) {
 
         ReadAndWrite obj = new ReadAndWrite();
+
         try {
             obj.readfile();
         }
@@ -32,6 +34,5 @@ public class Throws {
             System.out.println(e);
         }
     }
-
-
 }
+

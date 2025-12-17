@@ -11,20 +11,25 @@ public class IntroToNPE {
 
     }
 
-    // Thread dump
+    //Thread dump
     //Heap dump
 
     void show(){
+
         System.out.println("show method ");
+
         IntroToNPE obj1 = new IntroToNPE();
 
-        IntroToNPE npe = null;
-        test(npe);
+        IntroToNPE obj2 = null;
+
+        test(obj2);
     }
 
-    void test(IntroToNPE npe){
-        npe = null;
-        npe.dummy();
+    void test(IntroToNPE obj2){
+
+        obj2 = null;
+
+        obj2.dummy();
 
     }
 

@@ -4,6 +4,7 @@ import java.io.Closeable;
 import java.sql.SQLException;
 
 public class Ex implements AutoCloseable {
+
     @Override
     public void close() throws SQLException {
         System.out.println("Inside close method");

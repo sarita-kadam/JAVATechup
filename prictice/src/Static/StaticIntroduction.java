@@ -27,10 +27,8 @@ public class StaticIntroduction {
         System.out.println("instatnce method = " +obj1.salary);
 
 
-
         StaticIntroduction.staticmethod(); // static method calling without create object but access using class name
-        System.out.println("static method = " +StaticIntroduction.salary);
-
+        System.out.println("static method = " + StaticIntroduction.salary);
 
 
     }

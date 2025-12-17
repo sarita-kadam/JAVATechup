@@ -1,5 +1,17 @@
 package AccessModifer.p1;
 
+
+class Test{
+
+    protected double balance;
+
+    protected void display(){
+
+        System.out.println("Protected Access Modifer");
+    }
+}
+
+
 public class A {
 
     public int age;
@@ -8,12 +20,6 @@ public class A {
         System.out.println("Public Access Modifer");
     }
 
-    protected double balance;
-
-    protected void display(){
-
-        System.out.println("Protected Access Modifer");
-    }
 
 }
 

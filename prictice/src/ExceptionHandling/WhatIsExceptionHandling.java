@@ -8,13 +8,17 @@ public class WhatIsExceptionHandling {
 //        System.out.println("text massage ");
 
         try {
+
             String name = null;
+
             System.out.println(name.length());
 
             int a = 100 / 0;
+
             System.out.println("text massage ");
 
         } catch (Exception e) {
+
             System.out.println(e);
         }
 

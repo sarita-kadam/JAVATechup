@@ -20,5 +20,5 @@ public class HeapOutOfMemoryErrorTest {
     }
 }
 
-// garbage collection responsible for the detecting objects thet are not being used or refrenced and collect them
+// garbage collection responsible for the detecting objects thet are not being used or referenced and collect them
 

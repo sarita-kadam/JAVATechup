@@ -1,6 +1,7 @@
 package ExceptionHandling;
 
 public class FinallyBlock {
+
     public static void main(String[] args) {
 
         try {
@@ -8,7 +9,7 @@ public class FinallyBlock {
 
             int[] arr = new int[10];
 
-            arr[19] =100;
+            arr[19] = 100;
 
             SingleTryMultipleCatch obj = new SingleTryMultipleCatch();
 

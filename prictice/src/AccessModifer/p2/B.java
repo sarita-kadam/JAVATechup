@@ -8,9 +8,18 @@ class M {
     void test(){
         System.out.println("protected");
     }
+
+
+}
+
+class S {
+
+
 }
 
 public class B extends E {
+
+
     public static void main(String[] args) {
 
         A obj = new A();
@@ -18,6 +27,9 @@ public class B extends E {
 
         E ob1 = new E();
         obj.show();
+
+//        B b = new B();
+//        b.
 
     }
 }

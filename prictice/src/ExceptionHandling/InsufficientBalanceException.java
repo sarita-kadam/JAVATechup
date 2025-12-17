@@ -2,9 +2,10 @@ package ExceptionHandling;
 
 import java.util.Scanner;
 
-public class InsufficientBalanceException extends Exception {
+public class InsufficientBalanceException extends RuntimeException {
 
     public InsufficientBalanceException(String massage){
+
         super(massage);
 
     }
@@ -24,10 +25,12 @@ public class InsufficientBalanceException extends Exception {
                 throw new InsufficientBalanceException("Insufficient balance ! " + balance);
             }
             else {
-            balance -= amount;
-                System.out.println("Successfully Withdraw ! Remaining balance : " + balance);
+                balance -= amount;
+            System.out.println("Successfully Withdraw ! Remaining balance : " + balance);
             }
+
         } catch (InsufficientBalanceException e){
+
             System.out.println(e.getMessage());
         } finally {
             System.out.println("Thank you for using ATM ");

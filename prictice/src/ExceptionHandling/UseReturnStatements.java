@@ -9,13 +9,17 @@ public class UseReturnStatements {
     }
 
     int show(){
+
         try {
             int a = 10;
             int b = 0;
             int c = a / b;
+
             System.out.println(c);
             return 1;
+
         } catch (Exception e) {
+
             System.out.println(e.getMessage());
             return 2;
         }

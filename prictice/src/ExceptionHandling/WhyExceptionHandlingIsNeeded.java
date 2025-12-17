@@ -18,10 +18,10 @@ public class WhyExceptionHandlingIsNeeded {
         }
         catch (Exception e)
         {
-            System.out.println("we got an exception. ");
+            System.out.println("we got an exception.. ");
         }
 
-        System.out.println("Test Line ");
+        System.out.println("Test Line..");
 
         try
         {
@@ -29,7 +29,7 @@ public class WhyExceptionHandlingIsNeeded {
         }
         catch (Exception e)
         {
-            System.out.println("we got an another exception.");
+            System.out.println("we got an another exception..");
         }
     }
 

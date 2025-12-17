@@ -24,8 +24,11 @@ public class FindLargestNumber {
         int largest = number[0];
 
         for (int num : number) {
+
             if(num > largest){
+
                 largest = num;
+
             }
         }
 

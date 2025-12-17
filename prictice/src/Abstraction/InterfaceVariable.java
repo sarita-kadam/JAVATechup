@@ -13,7 +13,7 @@ interface MyInterface{
 class Demo implements MyInterface {
 
     void show(){
-        System.out.println(a);
+        System.out.println(MyInterface.a);
 
         //or using interface name
         //System.out.println("Access using interface name: " +MyInterface.a);

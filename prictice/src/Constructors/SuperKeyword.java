@@ -20,13 +20,13 @@ public class SuperKeyword extends parent{
 
     }
     SuperKeyword(int number){
-        super(10);
+       // super(10);
         System.out.println("child class 1 parameter constructer");
     }
 
     public static void main(String[] args) {
 
-        SuperKeyword obj = new SuperKeyword(10 );
+        SuperKeyword obj = new SuperKeyword();
 
     }
 }

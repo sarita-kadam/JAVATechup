@@ -2,6 +2,11 @@ package ExceptionHandling;
 
 public class IntroToCompileTime {
 
+    void show(){
+
+        System.out.println("show method ");
+    }
+
     public static void main(String[] args) {
 
         IntroToCompileTime obj = null;
@@ -10,7 +15,6 @@ public class IntroToCompileTime {
 
             obj = new IntroToCompileTime();
         }
-
         obj.show();
 
         try
@@ -23,7 +27,5 @@ public class IntroToCompileTime {
         }
 
     }
-    void show(){
-        System.out.println("show method ");
-    }
+
 }

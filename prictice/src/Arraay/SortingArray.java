@@ -12,7 +12,6 @@ public class SortingArray {
 
         for (int i = 0; i < arr.length; i++){
 
-          //  int flag = 0;
 
             for (int j = 0; j < arr.length-1-i; j++){
 
