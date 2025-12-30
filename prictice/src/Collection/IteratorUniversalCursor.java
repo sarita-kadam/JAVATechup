@@ -18,7 +18,6 @@ public class IteratorUniversalCursor {
 
         Iterator<String> it = list.iterator();
 
-
         while (it.hasNext()){
 
          String s = it.next();

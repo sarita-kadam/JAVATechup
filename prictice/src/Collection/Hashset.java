@@ -8,20 +8,21 @@ public class Hashset {
 
     public static void main(String[] args) {
 
-        ArrayList al = new ArrayList();
+       /* ArrayList al = new ArrayList();
         al.add("saru");
         al.add("riya");
-        al.add("sara");
+        al.add("sara");*/
 
         HashSet hashset = new HashSet();
-        hashset.addAll(al);
+       // hashset.addAll(al);
         hashset.add(20);
         hashset.add(10);
         hashset.add(40);
+        hashset.add(20);
 
         //hashset.clear();
 
-        hashset.remove("sara");
+       // hashset.remove("sara");
 
       //  System.out.println(hashset.contains("saraa"));
 

@@ -15,6 +15,7 @@ public class IntroToSynchronizationUsingThread extends Thread {
                 System.out.println(e);
             }*/
         }
+        System.out.println("massage out of synchronized" + Thread.currentThread().getName());
     }
 
     public static void main(String[] args) {

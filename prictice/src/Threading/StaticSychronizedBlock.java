@@ -14,11 +14,8 @@ class Earning extends Thread {
             System.out.println(total);
 
         }
-
     }
 }
-
-
 public class StaticSychronizedBlock {
 
     public static void main(String[] args) {

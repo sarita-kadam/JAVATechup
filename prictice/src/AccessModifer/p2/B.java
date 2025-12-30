@@ -12,7 +12,7 @@ class M {
 
 }
 
-class S {
+ class S {
 
 
 }

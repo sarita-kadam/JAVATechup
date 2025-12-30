@@ -3,6 +3,8 @@ package Collection;
 import java.util.ArrayList;
 import java.util.ListIterator;
 
+//List: 1. maintain insertion oeder
+
 public class List {
 
     public static void main(String[] args) {
