@@ -25,7 +25,7 @@ public class IntermediateOperations {
 
         List<Integer> list1 = List.of(2,4,6,8);
         list1.stream()
-                .map(num -> num* num)
+                .map(num -> num * num)
                 .forEach(e -> System.out.println(e));
               //.forEach(System.out::println);
 

@@ -40,6 +40,7 @@ public class CREATETable {
             ps.setInt(3,sub_dist);
 
             int row = ps.executeUpdate();
+
             if (row > 0) {
                 System.out.println("Data inserted successfully ! ");
             }

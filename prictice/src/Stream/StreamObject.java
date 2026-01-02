@@ -52,7 +52,5 @@ public class StreamObject {
             System.out.println(integer);
         });
 
-
-
     }
 }

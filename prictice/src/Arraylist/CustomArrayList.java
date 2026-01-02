@@ -29,7 +29,8 @@ public class CustomArrayList<e> {
         arr[size++] = e;
     }
 
-    // EnsureCapacity Method
+    // EnsureCapacity Method: This method increases the capacity of an ArrayList so that it can store at least minCapacity elements without resizing.
+    //It does NOT change the size, only the internal array capacity.
     public void ensureCapacity() {
         int newCapacity = arr.length * 2;
         arr = Arrays.copyOf(arr, newCapacity);  // creates a double array and copies existing elements.

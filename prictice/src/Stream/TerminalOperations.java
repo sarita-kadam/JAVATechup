@@ -88,7 +88,6 @@ public class TerminalOperations {
     //min()Return Type(Optional) :Finds minimum
 
         List<Integer> list8 = Arrays.asList(10,20,34,54,19);
-
         int minNumber = list8.stream()
                 .min(Integer::compareTo)
                 .get();
