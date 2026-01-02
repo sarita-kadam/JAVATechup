@@ -78,17 +78,10 @@ public class ArrayListMethods {
         al.set(2, "Pune");
         System.out.println(al);
 
-        Iterator itr = al.iterator();
+        Iterator iterator = al.iterator();
 
-        while (itr.hasNext()){
-
-            System.out.println(itr.next());
+        while (iterator.hasNext()){
+            System.out.println(iterator.next());
         }
-
-
-
-
-
-
     }
 }

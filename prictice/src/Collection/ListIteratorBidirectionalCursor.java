@@ -4,6 +4,12 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.ListIterator;
 
+
+/*Supports forward & backward traversal
+* Can add, update, remove elements
+* Works only with List, not Set or Map
+* More powerful than Iterator*/
+
 public class ListIteratorBidirectionalCursor {
 
     public static void main(String[] args) {
@@ -32,5 +38,7 @@ public class ListIteratorBidirectionalCursor {
 
             System.out.println(lir.previous());
         }
+
+
     }
 }
