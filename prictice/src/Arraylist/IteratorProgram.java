@@ -5,6 +5,9 @@ import AccessModifer.p1.A;
 import java.util.ArrayList;
 import java.util.Iterator;
 
+// iteration fast in arraylist(Very fast traversal)
+//Non-contiguous Memory ([Prev|Data|Next] -> [Prev|Data|Next] -> [Prev|Data|Next])
+
 public class IteratorProgram {
 
     public static void main(String[] args) {
@@ -19,11 +22,11 @@ public class IteratorProgram {
 
         Iterator<Integer> itr = al.iterator();
 
-       /* while (itr.hasNext()){
-            System.out.println(itr.next());
-        }*/
-
         while (itr.hasNext()){
+            System.out.println(itr.next());
+        }
+
+        /*while (itr.hasNext()){
 
             Integer num = itr.next();
 
@@ -31,6 +34,6 @@ public class IteratorProgram {
                 itr.remove();
             }
         }
-        System.out.println(al);
+        System.out.println(al);*/
     }
 }

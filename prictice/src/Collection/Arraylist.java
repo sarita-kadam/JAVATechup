@@ -2,6 +2,8 @@ package Collection;
 
 import java.util.*;
 
+//Frequent access using index
+//Iteration is frequent (very fast)
 public class Arraylist {
 
     public static void main(String[] args) {

@@ -18,8 +18,7 @@ public class CopyOnWriteArrayListDemo {
 
         for (String s : al) {
             if (s.equals("riya")){
-                al.add("kadam");
-
+                al.add("patil");
             }
         }
         System.out.println(al);

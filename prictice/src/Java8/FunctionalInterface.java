@@ -13,7 +13,6 @@ interface A{
 @java.lang.FunctionalInterface
 interface B{
     void add();
-
 }
 
 public class FunctionalInterface implements B{

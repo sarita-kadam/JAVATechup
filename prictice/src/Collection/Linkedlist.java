@@ -3,6 +3,12 @@ package Collection;
 import java.util.Collections;
 import java.util.LinkedList;
 
+//Data storage : Nodes (data + links)
+//Random access : no(slow)
+//Insertion / Deletion : Insertion / Deletion
+//Memory usage : More (extra pointers)
+//use LinkedList for frequent insertions and deletions.
+
 public class Linkedlist {
 
     public static void main(String[] args) {
@@ -21,9 +27,11 @@ public class Linkedlist {
         li.add(10);
         li.add(22);
 
-        Collections.sort(li); // explicit
+        //Collections.sort(li); // explicit
 
-     System.out.println(li);
+     //System.out.println(li);
+
+        System.out.println(li.get(2));
 
     }
 }

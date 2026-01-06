@@ -14,9 +14,9 @@ public class AccessElements {
 
         System.out.println(al);
 
-        System.out.println("first element " +al.get(0));
+        System.out.println("first element " + al.get(0));
 
-        for (Object ob:al){
+        for (Object ob : al) {
             System.out.println(al);
             break;
         }

@@ -1,8 +1,6 @@
 package Java8;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class EmployeeInfo {
@@ -95,5 +93,61 @@ public class EmployeeInfo {
                 Collectors.counting()));
 
         System.out.println(map1);
+
+        //7. Average salary of each department
+        Map<String,Double> everage = emplist.stream()
+                .collect(Collectors.groupingBy(e-> e.getDepartment(),Collectors.averagingDouble(e-> e.getSalary())));
+        System.out.println(everage);
+
+        //8. Details  of youngest male employee int the product department
+        System.out.println("--------Details  of youngest male employee int the product department-------------------");
+        Optional<Employee> emp = emplist.stream().filter(n -> n.getGender() == "Male" && n.getDepartment() == "Product Development").collect(Collectors.minBy((o1, o2) -> o1.getAge() - o2.getAge()));
+        System.out.println(emp);
+
+        // 9. Who has the most working experience in the organization
+        System.out.println("-----------------most working experience in the organization---------------");
+        Optional<Employee> most = emplist.stream().collect(Collectors.minBy((o1, o2) -> o1.getYearOfJoining() - o2.getYearOfJoining()));
+        System.out.println(most);
+
+        //10. How many male and female employees are there in the sales and marketing team
+        System.out.println("---------------male and female employees are there in the sales and marketing team--------------");
+        Map<String, Long> malefemale = emplist.stream().filter(e -> e.getDepartment() == "Sales And Marketing").collect(Collectors.groupingBy(e -> e.getGender(), Collectors.counting()));
+        System.out.println(malefemale);
+
+        //11.What is the average salary of male and female employees
+        System.out.println("----------Average salary of male and female employees------------------------");
+        Map<String,Double> averagesalary = emplist.stream().collect(Collectors.groupingBy(e->e.getGender(),Collectors.averagingDouble(e -> e.getSalary())));
+        System.out.println(averagesalary);
+
+        //12. List down the names of all employees in each department?
+        System.out.println("-------List down the names of all employees in each department-------------");
+        Map<String,List<String>>department = emplist.stream().collect(Collectors.groupingBy(e ->e.getDepartment(),Collectors.mapping(e-> e.getName(),Collectors.toList())));
+        System.out.println(department);
+
+        //13. What is the average salary and total salary of the whole organization
+        System.out.println("------ average salary and total salary of the whole organization-----------------");
+        DoubleSummaryStatistics d = emplist.stream().collect(Collectors.summarizingDouble(e->e.getSalary()));
+        System.out.println("Average salary : "+d.getAverage());
+        System.out.println("Sum of a salary : "+d.getSum());
+
+        Double avg = emplist.stream().collect(Collectors.averagingDouble(r -> r.getSalary()));
+        System.out.println(avg);
+
+        Double sum = emplist.stream().collect(Collectors.summingDouble(r -> r.getSalary()));
+        System.out.println(sum);
+
+        //14. Separate the employees who are younger or equal to 25 years from those employees who are older than 25 years
+        System.out.println("25 years old employee");
+        Map<Boolean,List<String>> year = emplist.stream().collect((Collectors.partitioningBy(e ->e.getAge()<=25,Collectors.mapping(r->r.getName(),Collectors.toList()))));
+        System.out.println(year);
+
+
+
+        //15. Who is the oldest employee in the organization? What is his age and which department he belongs to
+        System.out.println("Oldest employee");
+        Employee employee = emplist.stream().collect(Collectors.maxBy((e1,e2)->e1.getAge()-e2.getAge())).orElse(null);
+        System.out.println("Age is : "+employee.getAge());
+        System.out.println("Department is : "+employee.getDepartment());
+
     }
 }
