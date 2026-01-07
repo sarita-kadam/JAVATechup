@@ -18,6 +18,7 @@ public class FreqeuncyMethod {
         System.out.println(count);
 
 
+
         List<String> fruit = List.of("Apple", "Banana", "Orange","Apple");
         Set<String> duplicate = fruit.stream()
                 .filter(f-> Collections.frequency(fruit,f) > 1)

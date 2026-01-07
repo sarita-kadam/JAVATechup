@@ -10,10 +10,10 @@ public class UnaryOperators {
 
          boolean t = false;                              // ! , Inverts a boolean value
 
-        System.out.println("post-increment = " + a++);   //Uses value first, then increments //3
+       /* System.out.println("post-increment = " + a++);   //Uses value first, then increments //3
         System.out.println(a);
         System.out.println("pre-increment = " + ++a);    //Increments first, then uses value. //3
-        System.out.println(a);
+        System.out.println(a);*/
 
         System.out.println("post-decrement = " + a--);    // Uses value first, then decrements.
         System.out.println(a);

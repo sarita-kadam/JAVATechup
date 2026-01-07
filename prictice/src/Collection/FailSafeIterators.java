@@ -31,10 +31,12 @@ public class FailSafeIterators {
 
                     fruits.remove("Banana");
                 }
+
            if (!fruits.contains("Pineapple")){
 
                fruits.add("Pineapple");
             }
+
             }
             System.out.println(fruits);
         }

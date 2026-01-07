@@ -3,7 +3,7 @@ package Collection;
 import java.util.ArrayList;
 import java.util.ListIterator;
 
-//List: 1. maintain insertion oeder
+//List: 1. maintain insertion order
 
 public class List {
 

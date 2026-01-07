@@ -4,11 +4,11 @@ public class ReverseArray {
     public static void main(String[] args) {
 
 
-        int[] a = {6, 9, 2, 6, 3, 1};
+        int[] arr = {6, 9, 2, 6, 3, 1};
 
-        for(int i = a.length -1; i >= 0; i--){
+        for(int i = arr.length -1; i >= 0; i--){
 
-            System.out.print(" " + a[i]);
+            System.out.print(" " + arr[i]);
         }
 
 
