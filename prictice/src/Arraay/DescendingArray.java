@@ -2,7 +2,7 @@ package Arraay;
 
 public class DescendingArray {
 
-    public static void main(String[] args) {
+    public static void main(String[]args) {
 
         int[] arr = {7,3,1,8,5};
 
@@ -12,7 +12,7 @@ public class DescendingArray {
 
                 if (arr[i] > arr[j]){
 
-                    int temp = arr[0];
+                     int temp = arr[0];
                      temp = arr[i];
                      arr[i] = arr[j];
                      arr[j] = temp;
@@ -22,7 +22,7 @@ public class DescendingArray {
         }
 
         for (int i = 0; i < arr.length; i++) {
-            System.out.println(arr[i]);
+            System.out.print(arr[i]);
 
         }
     }

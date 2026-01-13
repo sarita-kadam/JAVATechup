@@ -5,7 +5,7 @@ import java.util.Comparator;
 import java.util.List;
 
 //Comparable (Interface) : Comparable is a functional interface in java.lang
-//Used to define natural/default sorting order of objects
+//Comparable is an interface used to define the natural ordering of objects.
 //A class can implement only one Comparable
 //It has one method → compareTo()
 
@@ -41,11 +41,10 @@ public class ComparableExample {
         List<Student> list = new ArrayList<>();
         list.add(new Student(3,"riya"));
         list.add(new Student(1,"sara"));
-        list.add(new Student(2,"nia"));
+        list.add(new Student(2,"Nia"));
 
         Collections.sort(list);
         System.out.println(list);
-
 
     }
 }

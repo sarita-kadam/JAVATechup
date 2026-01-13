@@ -27,6 +27,7 @@ class C extends B{
 }
 
 class D extends C{
+
     @Override
     void show() {
 
@@ -36,7 +37,6 @@ class D extends C{
 public class DiamondProblem {
 
     public static void main(String[] args) {
-
 
     }
 }

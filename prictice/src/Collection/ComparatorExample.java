@@ -30,7 +30,6 @@ class Students {
                 '}';
     }
 }
-
 class SortById implements Comparator<Students>{
 
     @Override
@@ -60,6 +59,8 @@ public class ComparatorExample {
 
         Collections.sort(studentsList,new SortById()); // sort by id
         System.out.println("Sorted By Id " + studentsList);
+
+        System.out.println("                       ");
 
         Collections.sort(studentsList,new SortByName()); // sort by name
         System.out.println("Sorted By Name " + studentsList);

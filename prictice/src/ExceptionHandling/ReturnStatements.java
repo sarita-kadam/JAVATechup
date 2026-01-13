@@ -39,7 +39,7 @@ public class ReturnStatements {
 
     }
 
-    //Rule 3: If finally has a return → it OVERRIDES try/catch return
+    //Rule 3: If finally has a return → it overridden  try/catch return
 
     public static int show(){
 
@@ -52,6 +52,7 @@ public class ReturnStatements {
             return 3;
         }
         finally {
+
             System.out.println("3 finally block");
             return 4;
         }

@@ -24,6 +24,7 @@ public class Immutablclass {
     public static void main(String[] args) {
 
         Student obj = new Student("saru",23);
+
         System.out.println(obj.getName());
         System.out.println(obj.getAge());
 

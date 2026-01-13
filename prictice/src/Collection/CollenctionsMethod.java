@@ -16,12 +16,14 @@ public class CollenctionsMethod {
         list.add(20);
         list.add(10);
 
+        System.out.println(list);
 
-        //sort() :Sorts list in ascending order.
+        //sort() :Sorts list in ascending order.(Asending order)
         Collections.sort(list);
         System.out.println(list);
 
-        //reverse() : Reverses order of elements.
+
+        //reverse() : Reverses order of elements.(Descending order)
         Collections.reverse(list);
         System.out.println(list);
 

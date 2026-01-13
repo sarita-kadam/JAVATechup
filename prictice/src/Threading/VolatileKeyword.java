@@ -1,24 +1,26 @@
 package Threading;
 
-public class VolatileKeyword extends Thread{
+// Prevents thread from using cached value
 
-   volatile boolean running = true;
+public class VolatileKeyword extends Thread {
+
+    volatile boolean running = true;
 
     @Override
 
     public void run() {
-
         System.out.println("Thread Started...");
 
-        while (running){
+        while (running) {
 
         }
+
         System.out.println("Thread Stopped...");
     }
 
     public static void main(String[] args) throws InterruptedException {
 
-       // System.out.println(Thread.currentThread().getName());
+        // System.out.println(Thread.currentThread().getName());
 
         VolatileKeyword t1 = new VolatileKeyword();
         t1.start();

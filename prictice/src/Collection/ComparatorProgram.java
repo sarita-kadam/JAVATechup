@@ -2,6 +2,7 @@ package Collection;
 
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 
 class WiproEmp{
@@ -100,14 +101,25 @@ public class ComparatorProgram {
         arrayList.add(new WiproEmp("riya","sharma","pune",12000.0,2));
         arrayList.add(new WiproEmp("sita","patil","mumbai",13000.0,3));
         arrayList.add(new WiproEmp("siya","patil","mumbai",15000.0,4));
-        arrayList.add(new WiproEmp("nia","biradar","nager",90000.0,5));
+        arrayList.add(new WiproEmp("nia","bhat","nager",90000.0,5));
 
-        arrayList.sort(new SortedByName());
-        System.out.println(arrayList);
+        /*arrayList.sort(new SortedByName());
+        System.out.println(" Sorted By Name" + arrayList);
+
+        System.out.println("             ");
 
         arrayList.sort(new SortedId());
-        System.out.println(arrayList);
+        System.out.println( " Sorted By Id"+ arrayList);*/
 
+        Comparator<WiproEmp> idcomprator = new Comparator<WiproEmp>() {
+            @Override
+            public int compare(WiproEmp o1, WiproEmp o2) {
+                return o1.getEmp_id() - o2.getEmp_id();
+            }
+        };
+
+        Collections.sort(arrayList,idcomprator);
+        System.out.println(idcomprator);
     }
 }
 

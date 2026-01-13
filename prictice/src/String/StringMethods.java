@@ -18,7 +18,7 @@ public class StringMethods {
         String s1 = "java";
         String s2 = "java";
         String s3 = new String("java");
-        System.out.println(s2.equals(s3)); // true equals() check content instring
+        System.out.println(s2.equals(s3)); // true equals() check content in string
         System.out.println(s2 == s3);      // false == check memory address
 
         // 4.equalsIgnoreCase(String anotherString): Compares two strings, ignoring case
