@@ -1,11 +1,4 @@
-package Collection;
-
-
-//Comparator is an interface in java.util
-//Used to define custom sorting logic
-//Allows multiple sorting strategies
-//Does NOT modify the original class
-
+package Sorting;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -41,13 +34,16 @@ class SortById implements Comparator<Students>{
 class SortByName implements Comparator<Students>{
 
 
+
     @Override
     public int compare(Students o1, Students o2) {
         return o1.name.compareTo(o2.name);
     }
 }
 
-public class ComparatorExample {
+
+public class ComparatorPractice {
+
     public static void main(String[] args) {
 
         List<Students> studentsList = new ArrayList<Students>();
@@ -57,13 +53,23 @@ public class ComparatorExample {
         studentsList.add(new Students(1,"jiya"));
         studentsList.add(new Students(3,"raha"));
 
-        Collections.sort(studentsList,new SortById()); // sort by id
-        System.out.println("Sorted By Id " + studentsList);
+        Comparator<Students> studentsComparator = new Comparator<Students>() {
+            @Override
+            public int compare(Students o1, Students o2) {
+                return o1.id - o2.id;
+            }
+        };
 
-        System.out.println("                       ");
+        System.out.println(" Before Soring " + studentsList);
 
-        Collections.sort(studentsList,new SortByName()); // sort by name
-        System.out.println("Sorted By Name " + studentsList);
+        Collections.sort(studentsList,studentsComparator);
+
+        System.out.println("After sorting " + studentsList);
+
+        for (Students x : studentsList){
+            System.out.println(x);
+
+        }
 
     }
 }

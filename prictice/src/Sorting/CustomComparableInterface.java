@@ -1,4 +1,4 @@
-package Collection;
+package Sorting;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -94,8 +94,9 @@ public class CustomComparableInterface {
         System.out.println(employeList);
 
 
-
-
+        for (Employe x : employeList){
+            System.out.println(x);
+        }
 
     }
 }
