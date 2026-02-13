@@ -26,8 +26,8 @@ public class EmpProgram {
         Collection c = map.values();
         System.out.println(c);
 
-        Set<Map.Entry<Integer, String>> ent = map.entrySet();
-        System.out.println(ent);
+       /* Set<MapDemo.Entry<Integer, String>> ent = map.entrySet();
+        System.out.println(ent);*/
 
     }
 }

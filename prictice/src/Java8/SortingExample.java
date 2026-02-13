@@ -1,17 +1,18 @@
 package Java8;
 
 import Collection.List;
-
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 
 class BookSort implements Comparable<BookSort>{
+
     private String title;
     private String author;
     private int pages;
 
     public BookSort(String title, String author, int pages) {
+
         this.title = title;
         this.author = author;
         this.pages = pages;
@@ -52,11 +53,13 @@ class BookSort implements Comparable<BookSort>{
 
     @Override
     public int compareTo(BookSort o) {
+
         return o.getPages() - this.getPages();
     }
 }
 
 public class SortingExample {
+
     public static void main(String[] args) {
 
         ArrayList<BookSort> list = new ArrayList<>();

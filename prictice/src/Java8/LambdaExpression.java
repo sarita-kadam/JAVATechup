@@ -2,7 +2,7 @@ package Java8;
 
 import java.lang.FunctionalInterface;
 
-//Lambda Expression :A lambda expression is a short and clear way to write anonymous functions (functions without a name).
+//Lambda Expression :A lambda expression is functions without a name.
 //Lambda expressions work only with functional interfaces.
 //Lambda Expression Syntax : 1.(parameters) -> expression  2. (parameters) -> { statements; }
 
@@ -16,7 +16,6 @@ interface Test{
     }
 
 }
-
 
 public class LambdaExpression implements Test{
     @Override
@@ -32,19 +31,15 @@ public class LambdaExpression implements Test{
 
     public static void main(String[] args) {
 
-        /*Test t = (a,b) -> {
+        Test t = (a,b) -> {
             return a + b;
         };
-        System.out.println(t.show(10,99));*/
+        System.out.println(t.show(10,99));
 
-        Test t = (int a , int b) -> a +b;
+        /*Test t1 = (int a, int b) -> a +b;
         t.add();
 
-        System.out.println(t.show(10,100));
-
-
-
-
+        System.out.println(t1.show(10,100));*/
 
         }
     }
