@@ -10,6 +10,9 @@ class InvalidEnterAmount extends RuntimeException{
 }
 
 public class BankDetails {
+    public static void main(String[] args) {
+
+    }
 
     private String holderName;
     private double balance = 1000;

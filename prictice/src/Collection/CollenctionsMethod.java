@@ -22,7 +22,6 @@ public class CollenctionsMethod {
         Collections.sort(list);
         System.out.println(list);
 
-
         //reverse() : Reverses order of elements.(Descending order)
         Collections.reverse(list);
         System.out.println(list);

@@ -15,14 +15,13 @@ public class CollectorsMethod {
         List<String> name = Arrays.asList("sara" ,"riya","nia");
 
         List<String> stringList = name.stream()
-                .map(n-> n.toUpperCase())
+               // .map(n -> n.toUpperCase())
                 .collect(Collectors.toList());
         System.out.println(stringList);
 
     //toSet() : Collects elements into a Set (removes duplicates)
 
-        List<Integer> number = Arrays.asList(1,2,3,1,2,5);
-
+        List<Integer> number = Arrays.asList(1,2,3,1,2,5,4);
         Set<Integer> integerList = number.stream()
                 .collect(Collectors.toSet());
         System.out.println(integerList);
@@ -33,9 +32,7 @@ public class CollectorsMethod {
 
         Map<String,Integer> map = stringList1.stream()
                 .collect(Collectors.toMap(
-                        n -> n,
-                        n-> n.length()
-                ));
+                        n -> n, n -> n.length()));
         System.out.println(map);
 
 
@@ -72,15 +69,13 @@ public class CollectorsMethod {
         System.out.println(emplist);
 
          // odd even using groupingBy()
-
         List<Integer> num = Arrays.asList(2,1,3,4,5,6,7,8,9);
-
         Map map1 =  num.stream()
                 .collect(Collectors.groupingBy(n-> n % 2 == 0 ? "Even" : "Odd"));
         System.out.println(map1);
 
-        //groupingBy() + counting() : Count frequency of elements
 
+        //groupingBy() + counting() : Count frequency of elements
         List<String> fruits = Arrays.asList("Apple", "Banana", "Apple");
         Map<String,Long> map2 = fruits.stream()
                 .collect(Collectors.groupingBy(f-> f ,Collectors.counting()));
@@ -113,6 +108,12 @@ public class CollectorsMethod {
         IntSummaryStatistics summaryStatistics = Stream.of(1,2,3,4)
                 .collect(Collectors.summarizingInt(n-> n));
         System.out.println(summaryStatistics);
+
+        //averagingInt(), averagingDouble() : Calculate average.
+
+        Double avgAge = employeeList.stream()
+                .collect(Collectors.averagingInt(emp -> emp.getAge()));
+        System.out.println(avgAge);
 
     }
 }

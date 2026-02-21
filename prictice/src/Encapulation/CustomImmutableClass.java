@@ -11,7 +11,6 @@ import java.util.Date;
 
 public final class CustomImmutableClass {
 
-
     private final int id;
     private final String name;
     private final Date joiningDate;
@@ -47,9 +46,9 @@ public final class CustomImmutableClass {
     public static void main(String[] args) {
 
 
-        Date d = new Date();
+        Date date = new Date();
 
-        CustomImmutableClass customImmutableClass = new CustomImmutableClass(1, "sara", d);
+        CustomImmutableClass customImmutableClass = new CustomImmutableClass(1, "sara", date);
 
         System.out.println(customImmutableClass);
     }

@@ -14,13 +14,12 @@ public class OptionalClass {
         return Optional.ofNullable(name);
     }
 
-
     public static void main(String[] args) {
 
         Optional<String> optional = Optional.of("java");
         Optional<String> nameoptional =  getName();
         System.out.println(nameoptional);
-        // System.out.println(nameoptional.orElse("null return"));
+        System.out.println(nameoptional.orElse("null return"));
         nameoptional.ifPresent(s -> System.out.println(s.length()));
 
         //  Stream<Objects> objectsStream = Stream.empty();
