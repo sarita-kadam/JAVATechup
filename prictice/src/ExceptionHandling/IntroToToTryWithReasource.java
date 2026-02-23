@@ -43,8 +43,7 @@ public class IntroToToTryWithReasource {
 
         BufferedReader br = null;
 
-        try
-        {
+        try {
            Scanner sc = new Scanner (new File("intput.txt"));
         }
         catch (IOException e) {

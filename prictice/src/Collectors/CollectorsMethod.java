@@ -13,7 +13,6 @@ public class CollectorsMethod {
         //toList() : Collects stream elements into a List.
 
         List<String> name = Arrays.asList("sara" ,"riya","nia");
-
         List<String> stringList = name.stream()
                // .map(n -> n.toUpperCase())
                 .collect(Collectors.toList());
@@ -22,6 +21,7 @@ public class CollectorsMethod {
     //toSet() : Collects elements into a Set (removes duplicates)
 
         List<Integer> number = Arrays.asList(1,2,3,1,2,5,4);
+
         Set<Integer> integerList = number.stream()
                 .collect(Collectors.toSet());
         System.out.println(integerList);
@@ -31,8 +31,7 @@ public class CollectorsMethod {
         List<String> stringList1 = Arrays.asList("sara" ,"riya","nia");
 
         Map<String,Integer> map = stringList1.stream()
-                .collect(Collectors.toMap(
-                        n -> n, n -> n.length()));
+                .collect(Collectors.toMap(n -> n, n -> n.length()));
         System.out.println(map);
 
 

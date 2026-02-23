@@ -51,7 +51,8 @@ public class EmployeeInfo {
         //4. details Max Salary
         System.out.println("---------------Details of Max Salary----------------");
         Employee empmax = emplist.stream()
-                .collect(Collectors.maxBy((o1, o2) -> Double.compare(o1.getSalary(), o2.getSalary()))).orElse(null);
+                .collect(Collectors.maxBy((o1, o2) -> Double.compare(o1.getSalary(), o2.getSalary())))
+                .orElse(null);
         System.out.println(empmax);
 
         System.out.println("-----------------Details of employee------------------");
