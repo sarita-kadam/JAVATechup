@@ -10,6 +10,5 @@ public class Continue {
             }
             System.out.println("Mark attendance for roll: " + roll);
         }
-
     }
 }

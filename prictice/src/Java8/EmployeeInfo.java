@@ -146,8 +146,6 @@ public class EmployeeInfo {
         Map<Boolean,List<String>> year = emplist.stream().collect((Collectors.partitioningBy(e ->e.getAge()<=25,Collectors.mapping(r->r.getName(),Collectors.toList()))));
         System.out.println(year);
 
-
-
         //15. Who is the oldest employee in the organization? What is his age and which department he belongs to
         System.out.println("Oldest employee");
         Employee employee = emplist.stream().collect(Collectors.maxBy((e1,e2)->e1.getAge()-e2.getAge())).orElse(null);

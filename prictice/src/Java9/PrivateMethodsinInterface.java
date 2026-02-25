@@ -2,6 +2,7 @@ package Java9;
 
 //In Java 9, interfaces can have private methods.
 //These methods are used only inside the interface (mainly to avoid duplicate code in default methods).
+//Private Methods : To Avoid Code Duplication in Default Methods
 
 import static sun.security.util.KeyUtil.validate;
 

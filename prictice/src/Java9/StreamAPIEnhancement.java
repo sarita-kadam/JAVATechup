@@ -24,14 +24,15 @@ public class StreamAPIEnhancement {
         System.out.println(result1);
 
 
-        //doWhile
+        //dropWhile
         List<Integer> result3 = list.stream()
                 .dropWhile(num-> num % 2 == 0)
                 .collect(Collectors.toList());
         System.out.println(result3);
 
        // Stream.iterate(1, x -> x + 1).forEach(System.out::println);
-        Stream.iterate(100, x-> x + 1).limit(10).forEach(System.out::println);
+        Stream.iterate(100, x-> x + 1).limit(10)
+                .forEach(System.out::println);
 
     }
 }
